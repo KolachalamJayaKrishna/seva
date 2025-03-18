@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
+import ritual from './Rituals.png';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -36,7 +37,7 @@ const App = () => {
         <header className="header">
           <div className="logo-container">
             
-            <h1 className="site-name">Your Website Name</h1>
+            <h1 className="site-name">Gayatri Seva Samastha</h1>
           </div>
           <button className="menu-toggle" onClick={toggleSidebar}>
             <span className="menu-icon">☰</span>
@@ -98,7 +99,7 @@ const App = () => {
             </div>
           </div>
           <div className="copyright">
-            <p>&copy; {new Date().getFullYear()} Your Website Name. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Gayatri Seva Samastha. All rights reserved.</p>
           </div>
         </footer>
       </div>
@@ -132,31 +133,35 @@ const HomePage = ({ highlightImages, currentImageIndex, setCurrentImageIndex }) 
 
       {/* Website Details Sections */}
       <section className="details-section">
-        <h2>Welcome to Your Website</h2>
+        <h2>Welcome to Gayatri Seva Samastha</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, 
-          nunc id aliquam tincidunt, nisl nunc tincidunt nunc, id tincidunt nisl
-          nunc id aliquam tincidunt.
+        Gayatri Seva Samstha provides matrimonial assistance and religious services, 
+        including Purohit support for ceremonies like Gruhapravesham, Pitru Karyalu, 
+        and Abdeekas. With experienced priests and multiple branches, it ensures 
+        sacred rituals are performed traditionally in a hygienic environment.
         </p>
       </section>
 
       <section className="features-section">
-        <h2>Our Features</h2>
+        <h2>Our Services</h2>
         <div className="features-grid">
           <div className="feature-card">
-            <div className="feature-icon">🚀</div>
-            <h3>Feature 1</h3>
-            <p>Description of feature 1 goes here.</p>
+            <div className="feature-icon"><img class="ritual" src={ritual} alt="Feature Icon" /></div>
+            <h3>Hindu Vaidik Rituals</h3>
+            <p>Hindu Vaidika rituals like Upanayanam, Shastipoorthi, Yagnas, and Aabdeeka are performed 
+               by qualified Purohits in a sacred and hygienic atmosphere as per tradition.</p>
           </div>
           <div className="feature-card">
             <div className="feature-icon">💡</div>
-            <h3>Feature 2</h3>
-            <p>Description of feature 2 goes here.</p>
+            <h3>Gayatri Cottages</h3>
+            <p>Gayatri Resorts, on the banks of the Godavari in Pattiseema, West Godavari, offers the 
+               perfect getaway with comfortable accommodations for a relaxing holiday with family.</p>
           </div>
           <div className="feature-card">
             <div className="feature-icon">🛠️</div>
-            <h3>Feature 3</h3>
-            <p>Description of feature 3 goes here.</p>
+            <h3>Matrimonial Services & Catering</h3>
+            <p>Gayatri Seva Samstha offers matrimonial services and catering for Hindu gatherings, 
+              festivals, and dharmic rituals.</p>
           </div>
         </div>
       </section>
