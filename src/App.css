@@ -21,18 +21,21 @@ body {
 /* Header styles */
 .header {
   width: 100%;
+  align-items: center;
+  display: flex;
   background: white;
   color: #fff;
-  padding: 15px 20px;
+  padding: 15px 17px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000; /* Ensure it stays above other content */
 }
 
+
 .logo-container {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 
@@ -50,12 +53,12 @@ body {
 
 
 .menu-toggle {
-  display: none;
+  display: flex;
   background: none;
   border: none;
   font-size: 1.8rem;
   cursor: pointer;
-  color: white;
+  color: brown;
 }
 
 /* Content wrapper for sidebar and main content */
@@ -289,12 +292,12 @@ body {
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-  border-left: 5px solid #2575fc;
+  border-right: 5px solid brown;
 }
 
 .testimonials-section h2 {
   margin-bottom: 1.5rem;
-  color: #333;
+  color: brown;
   font-size: 2rem;
   position: relative;
   padding-bottom: 10px;
@@ -307,21 +310,19 @@ body {
   left: 0;
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  background: brown;
   border-radius: 2px;
 }
 
 .testimonial {
   padding: 2rem;
-  background-color: #f8f9fa;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  background-color: transparent;
   font-style: italic;
   position: relative;
 }
 
 .testimonial::before {
-  content: '"';
+  content: '';
   position: absolute;
   top: 10px;
   left: 10px;
@@ -335,7 +336,7 @@ body {
   text-align: right;
   font-weight: bold;
   font-style: normal;
-  color: #2575fc;
+  color: brown;
 }
 
 .ritual{
@@ -414,6 +415,7 @@ body {
 
 .social-links a:hover {
   background-color: rgba(165, 42, 42, 0.913);
+  border:none;
   transform: translateY(-3px);
 }
 
@@ -457,7 +459,7 @@ body {
   }
 
   .menu-toggle {
-    display: block;
+    display: flex;
   }
   
   .sidebar {

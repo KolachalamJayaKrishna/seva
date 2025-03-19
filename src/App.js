@@ -45,13 +45,13 @@ const App = () => {
       <div className="app-container">
         {/* Header */}
         <header className="header">
+        <button className="menu-toggle" onClick={toggleSidebar}>
+            <span className="menu-icon">☰</span>
+          </button>
           <div className="logo-container">
             <img class="real_logo" src={real_logo} alt="Real_logo" />
             <h1 className="site-name">Gayatri Seva Samastha</h1>
           </div>
-          <button className="menu-toggle" onClick={toggleSidebar}>
-            <span className="menu-icon">☰</span>
-          </button>
         </header>
 
         <div className="content-wrapper">
@@ -78,6 +78,14 @@ const App = () => {
                 <img src={call} alt="Home icon" />
                 Contact Us
                 </Link></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li classname="feedbacck"><Link to="/feedback" on onClick={()=> setSidebarOpen(false)}>
+                <img src={about} alt="Home icon" />
+                Feedback
+                </Link></li>
               </ul>
             </nav>
           </div>
@@ -95,6 +103,7 @@ const App = () => {
               <Route path="/cottage" element={<div>Cottages Page</div>} />
               <Route path="/branches" element={<div>Branches Page</div>} />
               <Route path="/contact" element={<div>Contact Page</div>} />
+              <Route path="/feedback" element={<div>Feedback Page</div>}/>
             </Routes>
           </main>
         </div>
@@ -201,10 +210,15 @@ const HomePage = ({ highlightImages, currentImageIndex, setCurrentImageIndex }) 
       </section>
 
       <section className="testimonials-section">
-        <h2>What Our Clients Say</h2>
+        <h2>Why our Samastha ?</h2>
         <div className="testimonial">
-          <p>"This is an amazing website! I love the services provided."</p>
-          <p className="testimonial-author">- John Doe</p>
+          <p>Gayatri Seva Samstha stands out because of its commitment to authentic 
+            Hindu traditions, experienced purohits, and a holistic range of services
+            that cater to both matrimonial and religious needs. Unlike others, it 
+            ensures a sacred and hygienic environment for rituals, 
+            personalized matchmaking services, and reliable catering for dharmic 
+            gatherings—all under one trusted platform.</p>
+          <p className="testimonial-author">- Gayatri Seva Samastha</p>
         </div>
       </section>
     </div>
