@@ -66,11 +66,11 @@ body {
 
 /* Sidebar styles */
 .sidebar {
-  max-width: fit-content;
+  width:18%;
   background: rgb(255, 255, 255);
   color: #fff;
   padding-top: 80px; /* Adjusted to avoid overlapping the header */
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   height: 100vh; /* Full height */
@@ -86,8 +86,15 @@ body {
   padding: 0.5rem 0;
 }
 
+.sidebar nav ul li a img {
+  width:25px;
+  height:25px;
+}
+
 .sidebar nav ul li a {
-  display: block;
+  display: flex;
+  align-items:center;
+  gap:10px;
   padding: 0.8rem 2rem;
   color: #131313;
   text-decoration: none;
@@ -105,7 +112,7 @@ body {
 
 /* Main content styles */
 .main-content {
-  margin-left: 150px; /* Ensure content is not hidden behind the sidebar */
+   /* Ensure content is not hidden behind the sidebar */
   margin-top: 60px; /* Adjust based on header height */
   padding: 2rem;
   overflow-y: auto; /* Allow scrolling */
@@ -355,13 +362,13 @@ body {
 
 /* Footer styles */
 .footer {
-  background: white;
+  background: rgba(165, 42, 42, 0.11);
   color: #000000;
   padding: 3rem 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-left: 150px;
+  margin-left:0;
 }
 
 .footer-section h3 {
@@ -379,7 +386,7 @@ body {
   left: 0;
   width: 40px;
   height: 3px;
-  background: #fff;
+  background: brown;
   border-radius: 1.5px;
 }
 
@@ -406,7 +413,7 @@ body {
 }
 
 .social-links a:hover {
-  background-color: rgba(0, 127, 225, 0.856);
+  background-color: rgba(165, 42, 42, 0.913);
   transform: translateY(-3px);
 }
 

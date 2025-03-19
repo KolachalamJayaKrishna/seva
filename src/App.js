@@ -9,6 +9,12 @@ import image_1 from './Image_1.webp';
 import image_2 from './Image_2.webp';
 import image_3 from './Image_3.webp';
 import real_logo from './Real_logo.png';
+import home from './Home.png'
+import about from './About.png'
+import services from './Services.png'
+import cottages from './ServiceCottage.png'
+import call from './Call.png'
+import branches from './Branches.png'
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -53,11 +59,25 @@ const App = () => {
           <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
             <nav>
               <ul>
-                <li><Link to="/" onClick={() => setSidebarOpen(false)}>Home</Link></li>
-                <li><Link to="/about" onClick={() => setSidebarOpen(false)}>About</Link></li>
-                <li><Link to="/services" onClick={() => setSidebarOpen(false)}>Services</Link></li>
-                <li><Link to="/cattage" onClick={() => setSidebarOpen(false)}>Cattage</Link></li>
-                <li><Link to="/contact" onClick={() => setSidebarOpen(false)}>Contact Us</Link></li>
+                <li><Link to="/" onClick={() => setSidebarOpen(false)}>
+                <img src={home} alt="Home icon" />
+                Home</Link></li>
+                <li><Link to="/about" onClick={() => setSidebarOpen(false)}>
+                <img src={about} alt="Home icon" />
+                About</Link></li>
+                <li><Link to="/services" onClick={() => setSidebarOpen(false)}>
+                <img src={services} alt="Home icon" />
+                Services</Link></li>
+                <li><Link to="/cottage" onClick={() => setSidebarOpen(false)}>
+                <img src={cottages} alt="Home icon" />
+                Cottages</Link></li>
+                <li><Link to="/branches" onClick={() => setSidebarOpen(false)}>
+                <img src={branches} alt="Home icon" />
+                Branches</Link></li>
+                <li><Link to="/contact" on onClick={()=> setSidebarOpen(false)}>
+                <img src={call} alt="Home icon" />
+                Contact Us
+                </Link></li>
               </ul>
             </nav>
           </div>
@@ -72,7 +92,8 @@ const App = () => {
               />} />
               <Route path="/about" element={<div>About Page</div>} />
               <Route path="/services" element={<div>Services Page</div>} />
-              <Route path="/cattage" element={<div>Cattage Page</div>} />
+              <Route path="/cottage" element={<div>Cottages Page</div>} />
+              <Route path="/branches" element={<div>Branches Page</div>} />
               <Route path="/contact" element={<div>Contact Page</div>} />
             </Routes>
           </main>
@@ -82,16 +103,25 @@ const App = () => {
         <footer className="footer">
           <div className="footer-section">
             <h3>Contact Us</h3>
-            <p>Email: info@yourwebsite.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Address: 123 Main Street, City, Country</p>
+            <p>Smt. Vemavarapu Vijaya Lakshmi</p>
+            <p>Email: vijayalswamy@gmail.com</p>
+            <p>Phone: <br/>+91 98490 50816<br/>
+                      +91 92468 74049<br/>
+                      +91 98490 27963</p>
           </div>
           <div className="footer-section">
             <h3>Our Branches</h3>
+            <h4>(Telangana)</h4>
             <ul>
-              <li>Branch 1: 456 Oak Avenue, City, Country</li>
-              <li>Branch 2: 789 Pine Street, City, Country</li>
-              <li>Branch 3: 101 Maple Road, City, Country</li>
+              <li>LB Nagar Branch: <br/>+91 7207094049</li>
+              <li>Tarnaka Branch: <br/>040-42604049<br/>+91 7207014049</li>
+              <li>Sanathnagar Branch:
+              <br/>+91 7842074049<br/>+91 7416014049</li>
+            </ul>
+            <h4>(Andra Pradesh)</h4>
+            <ul>
+              <li>Vijayawada Branch:
+              <br/>+91 9849050816<br/>+91 7842250270</li>
             </ul>
           </div>
           <div className="footer-section">
