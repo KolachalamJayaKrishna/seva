@@ -3,6 +3,12 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import ritual from './Rituals.png';
+import cottage from './Cottages.png';
+import cattering from './Cattering.png';
+import image_1 from './Image_1.webp';
+import image_2 from './Image_2.webp';
+import image_3 from './Image_3.webp';
+import real_logo from './Real_logo.png';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -10,9 +16,7 @@ const App = () => {
   
   // Sample images array - replace with your actual images
   const highlightImages = [
-    'https://via.placeholder.com/1200x400/FF5733/FFFFFF?text=Amazing+Feature+1',
-    'https://via.placeholder.com/1200x400/33A1FF/FFFFFF?text=Exciting+Feature+2',
-    'https://via.placeholder.com/1200x400/33FF57/000000?text=Awesome+Feature+3',
+    image_1,image_2,image_3,
   ];
 
   // Auto-scroll images
@@ -36,7 +40,7 @@ const App = () => {
         {/* Header */}
         <header className="header">
           <div className="logo-container">
-            
+            <img class="real_logo" src={real_logo} alt="Real_logo" />
             <h1 className="site-name">Gayatri Seva Samastha</h1>
           </div>
           <button className="menu-toggle" onClick={toggleSidebar}>
@@ -146,19 +150,19 @@ const HomePage = ({ highlightImages, currentImageIndex, setCurrentImageIndex }) 
         <h2>Our Services</h2>
         <div className="features-grid">
           <div className="feature-card">
-            <div className="feature-icon"><img class="ritual" src={ritual} alt="Feature Icon" /></div>
+            <div className="feature-icon"><img class="ritual" src={ritual} alt="Ritual" /></div>
             <h3>Hindu Vaidik Rituals</h3>
             <p>Hindu Vaidika rituals like Upanayanam, Shastipoorthi, Yagnas, and Aabdeeka are performed 
                by qualified Purohits in a sacred and hygienic atmosphere as per tradition.</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">💡</div>
+            <div className="feature-icon"><img class="cottage" src={cottage} alt="Cottage" /></div>
             <h3>Gayatri Cottages</h3>
             <p>Gayatri Resorts, on the banks of the Godavari in Pattiseema, West Godavari, offers the 
                perfect getaway with comfortable accommodations for a relaxing holiday with family.</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">🛠️</div>
+            <div className="feature-icon"><img class="cattering" src={cattering} alt="Cottage" /></div>
             <h3>Matrimonial Services & Catering</h3>
             <p>Gayatri Seva Samstha offers matrimonial services and catering for Hindu gatherings, 
               festivals, and dharmic rituals.</p>
