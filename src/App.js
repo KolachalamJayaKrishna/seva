@@ -15,6 +15,7 @@ import services from './Services.png'
 import cottages from './ServiceCottage.png'
 import call from './Call.png'
 import branches from './Branches.png'
+import ganesh from './Ganesh.png'
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -44,13 +45,20 @@ const App = () => {
     <Router>
       <div className="app-container">
         {/* Header */}
-        <header className="header">
-        <button className="menu-toggle" onClick={toggleSidebar}>
-            <span className="menu-icon">☰</span>
-          </button>
-          <div className="logo-container">
-            <img class="real_logo" src={real_logo} alt="Real_logo" />
-            <h1 className="site-name">Gayatri Seva Samastha</h1>
+        <header className="main-header">
+          <div className="top-header">
+            <h1 className="org-title">Sri Vijaya Gayathri Seva Samastha</h1>
+          </div>
+          <div className="bottom-header">
+            <button className="menu-toggle" onClick={toggleSidebar}>
+              <span className="menu-icon">☰</span>
+            </button>
+            <div className="logo-container">
+              <img className="real_logo" src={real_logo} alt="Real_logo" />
+            </div>
+            <button className="action-button">
+              <span>☎</span>
+            </button>
           </div>
         </header>
 
@@ -68,9 +76,9 @@ const App = () => {
                 <li><Link to="/services" onClick={() => setSidebarOpen(false)}>
                 <img src={services} alt="Home icon" />
                 Services</Link></li>
-                <li><Link to="/cottage" onClick={() => setSidebarOpen(false)}>
+                <li><Link to="/registration" onClick={() => setSidebarOpen(false)}>
                 <img src={cottages} alt="Home icon" />
-                Cottages</Link></li>
+                Registration</Link></li>
                 <li><Link to="/branches" onClick={() => setSidebarOpen(false)}>
                 <img src={branches} alt="Home icon" />
                 Branches</Link></li>
@@ -78,10 +86,6 @@ const App = () => {
                 <img src={call} alt="Home icon" />
                 Contact Us
                 </Link></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
                 <li classname="feedbacck"><Link to="/feedback" on onClick={()=> setSidebarOpen(false)}>
                 <img src={about} alt="Home icon" />
                 Feedback
@@ -100,7 +104,7 @@ const App = () => {
               />} />
               <Route path="/about" element={<div>About Page</div>} />
               <Route path="/services" element={<div>Services Page</div>} />
-              <Route path="/cottage" element={<div>Cottages Page</div>} />
+              <Route path="/registeration" element={<div>Registeration Page</div>} />
               <Route path="/branches" element={<div>Branches Page</div>} />
               <Route path="/contact" element={<div>Contact Page</div>} />
               <Route path="/feedback" element={<div>Feedback Page</div>}/>
@@ -136,10 +140,12 @@ const App = () => {
           <div className="footer-section">
             <h3>Follow Us</h3>
             <div className="social-links">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
+          </div>
+          <div className="Ganesh">
+            <img src={ganesh} alt="Ganesh" />
           </div>
           <div className="copyright">
             <p>&copy; {new Date().getFullYear()} Gayatri Seva Samastha. All rights reserved.</p>
@@ -196,15 +202,17 @@ const HomePage = ({ highlightImages, currentImageIndex, setCurrentImageIndex }) 
           </div>
           <div className="feature-card">
             <div className="feature-icon"><img class="cottage" src={cottage} alt="Cottage" /></div>
-            <h3>Gayatri Cottages</h3>
-            <p>Gayatri Resorts, on the banks of the Godavari in Pattiseema, West Godavari, offers the 
-               perfect getaway with comfortable accommodations for a relaxing holiday with family.</p>
+            <h3>Upanayanam</h3>
+            <p>Upanayanam is a sacred Hindu ritual marking a boy's initiation into spiritual learning, symbolizing his entry 
+              into the path of knowledge and righteousness. 
+              It involves the wearing of the sacred thread (Yajnopavita) and the chanting of Vedic mantras.</p>
           </div>
           <div className="feature-card">
             <div className="feature-icon"><img class="cattering" src={cattering} alt="Cottage" /></div>
-            <h3>Matrimonial Services & Catering</h3>
-            <p>Gayatri Seva Samstha offers matrimonial services and catering for Hindu gatherings, 
-              festivals, and dharmic rituals.</p>
+            <h3>Samvatsrikaalu</h3>
+            <p>Samvatsarikaalu refers to the annual rituals performed in Hindu tradition to honor ancestors and deities, 
+              ensuring blessings 
+              and spiritual well-being. These ceremonies often include prayers, offerings, and Vedic recitations.</p>
           </div>
         </div>
       </section>
