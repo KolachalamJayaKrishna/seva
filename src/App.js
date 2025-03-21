@@ -16,6 +16,8 @@ import cottages from './ServiceCottage.png'
 import call from './Call.png'
 import branches from './Branches.png'
 import ganesh from './Ganesh.png'
+// Import the AboutPage component
+import AboutPage from './About';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -86,7 +88,7 @@ const App = () => {
                 <img src={call} alt="Home icon" />
                 Contact Us
                 </Link></li>
-                <li classname="feedback"><Link to="/feedback" on onClick={()=> setSidebarOpen(false)}>
+                <li className="feedback"><Link to="/feedback" on onClick={()=> setSidebarOpen(false)}>
                 <img src={about} alt="Home icon" />
                 Feedback
                 </Link></li>
@@ -102,7 +104,7 @@ const App = () => {
                 currentImageIndex={currentImageIndex} 
                 setCurrentImageIndex={setCurrentImageIndex} 
               />} />
-              <Route path="/about" element={<div>About Page</div>} />
+              <Route path="/about" element={<AboutPage />} />
               <Route path="/services" element={<div>Services Page</div>} />
               <Route path="/registeration" element={<div>Registeration Page</div>} />
               <Route path="/branches" element={<div>Branches Page</div>} />
@@ -195,20 +197,20 @@ const HomePage = ({ highlightImages, currentImageIndex, setCurrentImageIndex }) 
         <h2>Our Services</h2>
         <div className="features-grid">
           <div className="feature-card">
-            <div className="feature-icon"><img class="ritual" src={ritual} alt="Ritual" /></div>
+            <div className="feature-icon"><img className="ritual" src={ritual} alt="Ritual" /></div>
             <h3>Hindu Vaidik Rituals</h3>
             <p>Hindu Vaidika rituals like Upanayanam, Shastipoorthi, Yagnas, and Aabdeeka are performed 
                by qualified Purohits in a sacred and hygienic atmosphere as per tradition.</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon"><img class="cottage" src={cottage} alt="Cottage" /></div>
+            <div className="feature-icon"><img className="cottage" src={cottage} alt="Cottage" /></div>
             <h3>Upanayanam</h3>
             <p>Upanayanam is a sacred Hindu ritual marking a boy's initiation into spiritual learning, symbolizing his entry 
               into the path of knowledge and righteousness. 
               It involves the wearing of the sacred thread (Yajnopavita) and the chanting of Vedic mantras.</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon"><img class="cattering" src={cattering} alt="Cottage" /></div>
+            <div className="feature-icon"><img className="cattering" src={cattering} alt="Cottage" /></div>
             <h3>Samvatsrikaalu</h3>
             <p>Samvatsarikaalu refers to the annual rituals performed in Hindu tradition to honor ancestors and deities, 
               ensuring blessings 

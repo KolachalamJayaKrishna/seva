@@ -24,7 +24,7 @@ body {
 /* Header styles - More responsive */
 .main-header {
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -104,10 +104,12 @@ body {
 .sidebar {
   background: rgb(255, 255, 255);
   color: #fff;
-  position: sticky;
+  position: fixed;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: 999;
+  padding-top: 12%;
   margin-top: 1.5%;
   transition: all 0.3s ease;
 }
@@ -150,6 +152,8 @@ body {
   padding: clamp(1rem, 4vw, 2rem);
   overflow-y: auto;
   width: 100%;
+  margin-top:10%;
+  margin-left:15%;
 }
 
 /* Home page styles */
@@ -409,6 +413,7 @@ body {
   gap: clamp(1rem, 3vw, 2rem);
   margin-left: 0;
   margin-right: 0;
+  z-index:1000;
 }
 .footer-section{
   margin-left: 5%;
@@ -513,10 +518,47 @@ body {
   .footer {
     grid-template-columns: repeat(2, 1fr);
   }
+  .values-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* Small to medium screens */
 @media (max-width: 768px) {
+  .about-hero-content,
+  .founder-content,
+  .growth-content {
+    flex-direction: row;
+    gap: 40px;
+  }
+  
+  .about-hero-image,
+  .founder-image,
+  .growth-image {
+    flex: 1;
+  }
+  
+  .about-hero-text,
+  .founder-bio,
+  .growth-text {
+    flex: 2;
+  }
+  
+  .founder-content {
+    align-items: flex-start;
+  }
+  
+  .founder-bio {
+    text-align: left;
+  }
+  
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .founder-image {
+    margin: 0;
+  }
   .content-wrapper {
     flex-direction: column;
   }
@@ -534,13 +576,11 @@ body {
   .sidebar {
     display: none;
     position: fixed;
-    top: 90px;
-    left: 10px;
+    top: 75px;
     width: 80%;
     max-width: 50%;
-    max-height: 100vh;
-    border-radius: 20px;
-    z-index: 1001;
+    height: 100vh;
+    z-index: 900;
     padding-top: 20px;
     overflow-y: auto;
   }
@@ -556,6 +596,7 @@ body {
   .footer {
     grid-template-columns: 1fr;
     padding: clamp(1.5rem, 4vw, 2rem) clamp(1rem, 3vw, 1rem);
+    z-index:800;
   }
 }
 
@@ -694,4 +735,133 @@ body {
   .carousel-indicators {
     display: none;
   }
+}
+
+/* About Page Styles */
+.about-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-page h1, 
+.about-page h2 {
+  color: brown;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.about-page h3 {
+  color: brown;
+  margin-bottom: 15px;
+}
+
+.about-page section {
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.about-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-hero-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Mission Section */
+.mission-content {
+  margin-top: 20px;
+}
+
+.mission-list {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.mission-list li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Founder Section */
+.founder-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.founder-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 3px solid #7a1f1f;
+}
+
+.founder-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder-bio {
+  text-align: center;
+}
+
+.founder-bio p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Values Section */
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.value-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.value-card h3 {
+  margin-bottom: 10px;
+}
+
+/* Growth Section */
+.growth-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.growth-text ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.growth-text li {
+  margin-bottom: 8px;
+}
+
+.growth-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
