@@ -76,7 +76,7 @@ const App = () => {
                 <li><Link to="/services" onClick={() => setSidebarOpen(false)}>
                 <img src={services} alt="Home icon" />
                 Services</Link></li>
-                <li><Link to="/registration" onClick={() => setSidebarOpen(false)}>
+                <li><Link to="/registeration" onClick={() => setSidebarOpen(false)}>
                 <img src={cottages} alt="Home icon" />
                 Registration</Link></li>
                 <li><Link to="/branches" onClick={() => setSidebarOpen(false)}>
@@ -86,7 +86,7 @@ const App = () => {
                 <img src={call} alt="Home icon" />
                 Contact Us
                 </Link></li>
-                <li classname="feedbacck"><Link to="/feedback" on onClick={()=> setSidebarOpen(false)}>
+                <li classname="feedback"><Link to="/feedback" on onClick={()=> setSidebarOpen(false)}>
                 <img src={about} alt="Home icon" />
                 Feedback
                 </Link></li>
