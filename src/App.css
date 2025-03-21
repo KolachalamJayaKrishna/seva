@@ -24,7 +24,7 @@ body {
 /* Header styles - More responsive */
 .main-header {
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -104,12 +104,12 @@ body {
 .sidebar {
   background: rgb(255, 255, 255);
   color: #fff;
-  position: fixed;
+  position: sticky;
   height: 100%;
   top: 0;
   left: 0;
   z-index: 999;
-  padding-top: 12%;
+  padding-top: 0%;
   margin-top: 1.5%;
   transition: all 0.3s ease;
 }
@@ -152,8 +152,7 @@ body {
   padding: clamp(1rem, 4vw, 2rem);
   overflow-y: auto;
   width: 100%;
-  margin-top:10%;
-  margin-left:15%;
+
 }
 
 /* Home page styles */
@@ -581,7 +580,7 @@ body {
     max-width: 50%;
     height: 100vh;
     z-index: 900;
-    padding-top: 20px;
+    padding-top: 7%;
     overflow-y: auto;
   }
   

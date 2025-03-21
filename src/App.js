@@ -66,7 +66,7 @@ const App = () => {
 
         <div className="content-wrapper">
           {/* Sidebar Navigation - Now visible by default on desktop */}
-          <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
+          <div className={`sidebar ${sidebarOpen ? 'open' : 'closed'}`}>
             <nav>
               <ul>
                 <li><Link to="/" onClick={() => setSidebarOpen(false)}>
