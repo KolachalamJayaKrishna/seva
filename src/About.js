@@ -1,5 +1,4 @@
 import React from 'react';
-import aboutImg2 from './Ganesh.png';
 import founderImg from './Ganesh.png';
 
 const aboutpage = () => {
@@ -99,9 +98,6 @@ const aboutpage = () => {
             <p>
               Each branch maintains the same standards of excellence and dedication to authentic traditions, serving the spiritual needs of devotees in their respective regions.
             </p>
-          </div>
-          <div className="growth-image">
-            <img src={aboutImg2} alt="Organization growth" />
           </div>
         </div>
       </section>

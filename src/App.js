@@ -18,6 +18,7 @@ import branches from './Branches.png'
 import ganesh from './Ganesh.png'
 // Import the AboutPage component
 import AboutPage from './About';
+import Branch from './Branch';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -107,7 +108,7 @@ const App = () => {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/services" element={<div>Services Page</div>} />
               <Route path="/registeration" element={<div>Registeration Page</div>} />
-              <Route path="/branches" element={<div>Branches Page</div>} />
+              <Route path="/branches" element={<Branch />} />
               <Route path="/contact" element={<div>Contact Page</div>} />
               <Route path="/feedback" element={<div>Feedback Page</div>}/>
             </Routes>
