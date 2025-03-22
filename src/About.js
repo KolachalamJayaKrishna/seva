@@ -1,5 +1,5 @@
 import React from 'react';
-import founderImg from './Ganesh.png';
+import founderImg from './photos/Ganesh.png';
 
 const aboutpage = () => {
   return (
@@ -48,11 +48,11 @@ const aboutpage = () => {
             <p>
             (Late)Sri. M Rama Rao Gaaru and (Late)Sri. V Venkateshwara Swami Gaaru established Sri Vijaya Gayathri Seva Samastha with a 
               profound dedication to preserving Hindu traditions. With over 20 years of experience 
-              in conducting and organizing Vedic ceremonies, she has guided countless families 
+              in conducting and organizing Vedic ceremonies, they have guided countless families 
               through important religious milestones.
             </p>
             <p>
-              Her vision of creating a space where spiritual traditions can thrive in the modern 
+              Their vision of creating a space where spiritual traditions can thrive in the modern 
               world has led to the establishment of multiple branches across Telangana and Andhra Pradesh, 
               serving thousands of devotees annually.
             </p>
@@ -87,12 +87,14 @@ const aboutpage = () => {
         <div className="growth-content">
           <div className="growth-text">
             <p>
-              Starting with a single location in Vijayawada, Sri Vijaya Gayathri Seva Samastha has expanded to multiple branches across Telangana and Andhra Pradesh, including:
+              Starting with a single location in Hyderabad, Sri Vijaya Gayathri Seva Samastha has expanded to multiple branches across Telangana and Andhra Pradesh, including:
             </p>
             <ul>
               <li>LB Nagar, Hyderabad</li>
               <li>Tarnaka, Hyderabad</li>
               <li>Sanathnagar, Hyderabad</li>
+              <li>Dammaiguda, Hyderabad</li>
+              <li>Kukatpally, Hyderabad</li>
               <li>Vijayawada, Andhra Pradesh</li>
             </ul>
             <p>

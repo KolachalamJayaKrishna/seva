@@ -2,23 +2,25 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
-import ritual from './Rituals.png';
-import cottage from './Cottages.png';
-import cattering from './Cattering.png';
-import image_1 from './Image_1.webp';
-import image_2 from './Image_2.webp';
-import image_3 from './Image_3.webp';
-import real_logo from './Real_logo.png';
-import home from './Home.png'
-import about from './About.png'
-import services from './Services.png'
-import cottages from './ServiceCottage.png'
-import call from './Call.png'
-import branches from './Branches.png'
-import ganesh from './Ganesh.png'
+import ritual from './photos/Rituals.png';
+import cottage from './photos/Cottages.png';
+import cattering from './photos/Cattering.png';
+import image_1 from './photos/Image_1.webp';
+import image_2 from './photos/Image_2.webp';
+import image_3 from './photos/Image_3.webp';
+import real_logo from './photos/Real_logo.png';
+import home from './photos/Home.png'
+import about from './photos/About.png'
+import services from './photos/Services.png'
+import cottages from './photos/ServiceCottage.png'
+import call from './photos/Call.png'
+import branches from './photos/Branches.png'
+import ganesh from './photos/Ganesh.png'
 // Import the AboutPage component
 import AboutPage from './About';
 import Branch from './Branch';
+import Services from './Services';
+import HinduSam from './ServicePages/Hindusam';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -106,11 +108,12 @@ const App = () => {
                 setCurrentImageIndex={setCurrentImageIndex} 
               />} />
               <Route path="/about" element={<AboutPage />} />
-              <Route path="/services" element={<div>Services Page</div>} />
+              <Route path="/services" element={<Services />} />
               <Route path="/registeration" element={<div>Registeration Page</div>} />
               <Route path="/branches" element={<Branch />} />
               <Route path="/contact" element={<div>Contact Page</div>} />
               <Route path="/feedback" element={<div>Feedback Page</div>}/>
+              <Route path="/hindusam" element={<HinduSam />} />
             </Routes>
           </main>
         </div>
@@ -133,11 +136,13 @@ const App = () => {
               <li>Tarnaka Branch: <br/>040-42604049<br/>+91 7207014049</li>
               <li>Sanathnagar Branch:
               <br/>+91 7842074049<br/>+91 7416014049</li>
+              <li>Dammaiguda Branch: <br/>+91 9666309705</li>
+              <li>Kukatpally Branch: <br/>+91 9000654049</li>
             </ul>
             <h4>(Andra Pradesh)</h4>
             <ul>
               <li>Vijayawada Branch:
-              <br/>+91 9849050816<br/>+91 7842250270</li>
+              <br/>+91 7842250270</li>
             </ul>
           </div>
           <div className="footer-section">
