@@ -21,6 +21,14 @@ import AboutPage from './About';
 import Branch from './Branch';
 import Services from './Services';
 import HinduSam from './ServicePages/Hindusam';
+import Aapdikam from './ServicePages/Aapdikaalu';
+import Agnihothram from './ServicePages/Agnihothra';
+import Japam from './ServicePages/Japaalu';
+import Maasikam from './ServicePages/Maasikalu';
+import Pithru from './ServicePages/Pithru';
+import Upanaayam from './ServicePages/Upanayanaalu';
+import Vivaaham from './ServicePages/Vivaaham';
+import Vratham from './ServicePages/Vrathaalu';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -114,6 +122,14 @@ const App = () => {
               <Route path="/contact" element={<div>Contact Page</div>} />
               <Route path="/feedback" element={<div>Feedback Page</div>}/>
               <Route path="/hindusam" element={<HinduSam />} />
+              <Route path="/aapdikaalu" element={<Aapdikam />} />
+              <Route path="/agnihothra-homam" element={<Agnihothram />} />
+              <Route path="/japaalu" element={<Japam />} />
+              <Route path="/vivaaham" element={<Vivaaham />} />
+              <Route path="/vrathaalu" element={<Vratham />} />
+              <Route path="/maasikalu" element={<Maasikam />} />
+              <Route path="/upanayanaalu" element={<Upanaayam />} />
+              <Route path="/pithru-kaaryaalu" element={<Pithru />} />
             </Routes>
           </main>
         </div>

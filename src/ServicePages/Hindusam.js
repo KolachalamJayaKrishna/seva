@@ -10,13 +10,13 @@ const AboutPage = () => {
       <button 
         onClick={() => navigate(-1)} 
         style={{
-          position: "absolute", 
-          top: "10px", 
+          position: "static", 
+          marginBottom: "3%",
+          top: "0px", 
           left: "10px", 
-          padding: "8px 12px", 
           fontSize: "16px", 
-          backgroundColor: "#f5f5f5", 
-          border: "1px solid #ccc", 
+          backgroundColor: "white", 
+          border: "none", 
           borderRadius: "5px", 
           cursor: "pointer"
         }}
