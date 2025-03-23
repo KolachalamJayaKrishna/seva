@@ -110,8 +110,8 @@ body {
   left: 0;
   z-index: 999;
   margin-top: 4%;
-  padding-top: 3%;
-  padding-bottom: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   transition: all 0.3s ease;
   width: 250px; /* Fixed width for sidebar */
   height: calc(100vh - 75px); /* Adjust for fixed header height */
@@ -157,7 +157,7 @@ body {
   overflow-y: auto;
   max-width: fit-content;
   margin-left: 250px; /* Adjust for fixed sidebar width */
-  margin-top: 50px; /* Adjust for fixed header height */
+  margin-top: 4%; /* Adjust for fixed header height */
 }
 
 /* Home page styles */
@@ -417,7 +417,7 @@ body {
   gap: clamp(1rem, 3vw, 2rem);
   margin-left: 0;
   margin-right: 0;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .footer-section {
@@ -601,7 +601,7 @@ body {
 
   .main-content {
     margin-left: 0;
-    margin-top: 2%; /* Adjust for fixed header height */
+    margin-top: 5%; /* Adjust for fixed header height */
     padding: clamp(1rem, 4vw, 2rem);
   }
 
