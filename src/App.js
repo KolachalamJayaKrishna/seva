@@ -16,7 +16,6 @@ import cottages from './photos/ServiceCottage.png'
 import call from './photos/Call.png'
 import branches from './photos/Branches.png'
 import ganesh from './photos/Ganesh.png'
-// Import the AboutPage component
 import AboutPage from './About';
 import Branch from './Branch';
 import Services from './Services';
@@ -29,6 +28,9 @@ import Pithru from './ServicePages/Pithru';
 import Upanaayam from './ServicePages/Upanayanaalu';
 import Vivaaham from './ServicePages/Vivaaham';
 import Vratham from './ServicePages/Vrathaalu';
+import Registrations from './RegisterationPage';
+import Feedbacks from './Feedback';
+import ContactDetails from './Contact';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -89,12 +91,12 @@ const App = () => {
                 <li><Link to="/services" onClick={() => setSidebarOpen(false)}>
                 <img src={services} alt="Home icon" />
                 Services</Link></li>
-                <li><Link to="/registeration" onClick={() => setSidebarOpen(false)}>
-                <img src={cottages} alt="Home icon" />
-                Registration</Link></li>
                 <li><Link to="/branches" onClick={() => setSidebarOpen(false)}>
                 <img src={branches} alt="Home icon" />
                 Branches</Link></li>
+                <li><Link to="/registeration" onClick={() => setSidebarOpen(false)}>
+                <img src={cottages} alt="Home icon" />
+                Registration</Link></li>
                 <li><Link to="/contact" on onClick={()=> setSidebarOpen(false)}>
                 <img src={call} alt="Home icon" />
                 Contact Us
@@ -117,10 +119,10 @@ const App = () => {
               />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/registeration" element={<div>Registeration Page</div>} />
+              <Route path="/registeration" element={<Registrations/>} />
               <Route path="/branches" element={<Branch />} />
-              <Route path="/contact" element={<div>Contact Page</div>} />
-              <Route path="/feedback" element={<div>Feedback Page</div>}/>
+              <Route path="/contact" element={<ContactDetails/>} />
+              <Route path="/feedback" element={<Feedbacks />}/>
               <Route path="/hindusam" element={<HinduSam />} />
               <Route path="/aapdikaalu" element={<Aapdikam />} />
               <Route path="/agnihothra-homam" element={<Agnihothram />} />
@@ -139,7 +141,7 @@ const App = () => {
           <div className="footer-section">
             <h3>Contact Us</h3>
             <p>Smt. Vemavarapu Vijaya Lakshmi</p>
-            <p>Email: vijayalswamy@gmail.com</p>
+            <p>Email: gssschedule18@gmail.com</p>
             <p>Phone: <br/>+91 98490 50816<br/>
                       +91 92468 74049<br/>
                       +91 98490 27963</p>
@@ -155,7 +157,7 @@ const App = () => {
               <li>Dammaiguda Branch: <br/>+91 9666309705</li>
               <li>Kukatpally Branch: <br/>+91 9000654049</li>
             </ul>
-            <h4>(Andra Pradesh)</h4>
+            <h4>(Andhra Pradesh)</h4>
             <ul>
               <li>Vijayawada Branch:
               <br/>+91 7842250270</li>
@@ -172,7 +174,7 @@ const App = () => {
             <img src={ganesh} alt="Ganesh" />
           </div>
           <div className="copyright">
-            <p>&copy; {new Date().getFullYear()} Gayatri Seva Samastha. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Sri Vijaya Gayathri Seva Samastha. All rights reserved.</p>
           </div>
         </footer>
       </div>
@@ -206,9 +208,9 @@ const HomePage = ({ highlightImages, currentImageIndex, setCurrentImageIndex }) 
 
       {/* Website Details Sections */}
       <section className="details-section">
-        <h2>Welcome to Gayatri Seva Samastha</h2>
+        <h2>Welcome to Sri Vijaya Gayathri Seva Samastha</h2>
         <p>
-        Gayatri Seva Samstha provides matrimonial assistance and religious services, 
+        Sri Vijaya Gayathri Seva Samastha provides matrimonial assistance and religious services, 
         including Purohit support for ceremonies like Gruhapravesham, Pitru Karyalu, 
         and Abdeekas. With experienced priests and multiple branches, it ensures 
         sacred rituals are performed traditionally in a hygienic environment.
@@ -244,7 +246,7 @@ const HomePage = ({ highlightImages, currentImageIndex, setCurrentImageIndex }) 
       <section className="testimonials-section">
         <h2>Why our Samastha ?</h2>
         <div className="testimonial">
-          <p>Gayatri Seva Samstha stands out because of its commitment to authentic 
+          <p>Sri Vijaya Gayathri Seva Samastha stands out because of its commitment to authentic 
             Hindu traditions, experienced purohits, and a holistic range of services
             that cater to both matrimonial and religious needs. Unlike others, it 
             ensures a sacred and hygienic environment for rituals, 

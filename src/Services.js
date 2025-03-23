@@ -16,7 +16,7 @@ const Branches = () => {
   const branches = [
     { title: "Hindu Saampradaaya Sidhantham", img: hindu, path: "/hindusam" },
     { title: "Agnihothra Homam (Vaidika Agniyagnam)", img: homam, path: "/agnihothra-homam" },
-    { title: "Maasikalu (Dharma Mariyu Aacharanaalu)", img: maasikaalu, path: "/maasikalu" },
+    { title: <>Maasikaalu (Shradhaa <br/> Karmalu)</>, img: maasikaalu, path: "/maasikalu" },
     { title: "Aapdikaalu (Aapatkaalika Vidhaanalu)", img: appdikaalu, path: "/aapdikaalu" },
     { title: "Samvatsarikaadhi Pithru kaaryaala Seva", img: pithru, path: "/pithru-kaaryaalu" },
     { title: "Vrathaalu (Dharma, Bhakti, Acharana)", img: vrathaalu, path: "/vrathaalu" },
