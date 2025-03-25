@@ -24,7 +24,7 @@ const Branches = () => {
         </div>
         <div className="branch-card">
           <h2>Kukatpally</h2>
-          <p>H.No: 15-21-211, Balaji Nagar, Kukatpally, Hyderabad 500072 <br/> <br/> 8:30am - 5:30pm<br/> 9000654049</p>
+          <p>H.No: 15-21-211, Balaji Nagar, Kukatpally, Hyderabad 500072 <br/>Daily<br/> 8:30am - 5:30pm<br/> 9000654049</p>
           <img src={kukatpally} alt="Kukatpally" />
         </div>
         <div className="branch-card">

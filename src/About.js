@@ -44,9 +44,10 @@ const aboutpage = () => {
             <img src={founderImg} alt="Founder" />
           </div>
           <div className="founder-bio">
-            <h3>(Late)Sri. M S Rama Rao Gaaru and (Late)Sri. V Venkateshwara Swami Gaaru</h3>
+            <h3>Smt.V Vijaya Lakshmi</h3>
+            <h3>W/O Sri. V S V Swamy Gaaru(Late) and D/O Sri. M S Rama Rao Gaaru(Late)</h3>
             <p>
-            (Late)Sri. M Rama Rao Gaaru and (Late)Sri. V Venkateshwara Swami Gaaru established Sri Vijaya Gayathri Seva Samastha with a 
+            They have established Sri Vijaya Gayathri Seva Samastha with a 
               profound dedication to preserving Hindu traditions. With over 20 years of experience 
               in conducting and organizing Vedic ceremonies, they have guided countless families 
               through important religious milestones.
