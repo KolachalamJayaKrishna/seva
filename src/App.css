@@ -33,7 +33,7 @@ body {
 }
 
 .top-header {
-  background-color: rgb(255, 240, 240);
+  background-color: white;
   color: white;
   padding: clamp(5px, 2vw, 12px) 0;
   text-align: center;
@@ -42,7 +42,7 @@ body {
 .org-title {
   font-size: clamp(1rem, 3vw, 1.5rem);
   margin: 0;
-  color: brown;
+  color: #07393C;
   font-weight: bold;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   padding: 0 10px;
@@ -66,11 +66,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   background: none;
   border: none;
   font-size: clamp(16px, 4vw, 20px);
   cursor: pointer;
-  color: brown;
+  color: #2C666E;
   width: clamp(30px, 8vw, 40px);
   height: clamp(30px, 8vw, 40px);
 }
@@ -83,7 +84,7 @@ body {
   border: none;
   font-size: clamp(16px, 4vw, 20px);
   cursor: pointer;
-  color: brown;
+  color: #2C666E;
   width: clamp(30px, 8vw, 40px);
   height: clamp(30px, 8vw, 40px);
 }
@@ -136,7 +137,7 @@ body {
   align-items: center;
   gap: 10px;
   padding: clamp(0.5rem, 2vw, 0.8rem) clamp(1rem, 3vw, 2rem);
-  color: #131313;
+  color: #07393C;
   text-decoration: none;
   transition: all 0.3s ease;
   font-weight: 500;
@@ -145,8 +146,8 @@ body {
 }
 
 .sidebar nav ul li a:hover {
-  background-color: rgba(165, 42, 42, 0.24);
-  color: brown;
+  background-color: rgba(7, 57, 60, 0.174);
+  color: #0A090C;
   transform: translateX(10px);
 }
 
@@ -225,15 +226,15 @@ body {
 .details-section {
   margin-bottom: clamp(1.5rem, 4vw, 3rem);
   padding: clamp(1rem, 3vw, 2rem);
-  background-color: rgba(165, 42, 42, 0.048);
+  background-color: #2c666e0c;
   border-radius: clamp(8px, 2vw, 12px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-  border-left: 5px solid brown;
+  border-left: 5px solid #07393C;
 }
 
 .details-section h2 {
   margin-bottom: clamp(1rem, 3vw, 1.5rem);
-  color: brown;
+  color: #07393C;
   font-size: clamp(1.5rem, 4vw, 2rem);
   position: relative;
   padding-bottom: 10px;
@@ -246,14 +247,14 @@ body {
   left: 0;
   width: clamp(50px, 10vw, 80px);
   height: 4px;
-  background: brown;
+  background: #07393C;
   border-radius: 2px;
 }
 
 .details-section p {
   font-size: clamp(0.9rem, 2.5vw, 1.1rem);
   line-height: 1.8;
-  color: #555;
+  color: #0A090C;
 }
 
 /* Features section styles */
@@ -267,7 +268,7 @@ body {
 
 .features-section h2 {
   margin-bottom: clamp(1rem, 3vw, 1.5rem);
-  color: brown;
+  color: #07393C;
   font-size: clamp(1.5rem, 4vw, 2rem);
   text-align: center;
   position: relative;
@@ -282,7 +283,7 @@ body {
   transform: translateX(-50%);
   width: clamp(50px, 10vw, 80px);
   height: 4px;
-  background: brown;
+  background: #07393C;
   border-radius: 2px;
 }
 
@@ -304,7 +305,7 @@ body {
 .feature-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-  background-color: rgba(165, 42, 42, 0.128);
+  background-color: #2c666e21;
 }
 
 .feature-icon {
@@ -320,7 +321,7 @@ body {
   margin: 0 auto;
 }
 
-.cottage {
+.upana {
   width: clamp(90px, 22vw, 150px);
   height: clamp(90px, 22vw, 150px);
   background-size: cover;
@@ -328,7 +329,7 @@ body {
   margin: 0 auto;
 }
 
-.cattering {
+.samvat {
   width: clamp(90px, 22vw, 150px);
   height: clamp(90px, 22vw, 150px);
   background-size: cover;
@@ -338,12 +339,12 @@ body {
 
 .feature-card h3 {
   margin-bottom: 1rem;
-  color: #333;
+  color: #07393C;
   font-size: clamp(1.2rem, 3vw, 1.5rem);
 }
 
 .feature-card p {
-  color: #555;
+  color: #0A090C;
   font-size: clamp(0.9rem, 2.2vw, 1rem);
 }
 
@@ -354,12 +355,12 @@ body {
   background-color: white;
   border-radius: clamp(8px, 2vw, 12px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-  border-right: 5px solid brown;
+  border-right: 5px solid #07393C;
 }
 
 .testimonials-section h2 {
   margin-bottom: clamp(1rem, 3vw, 1.5rem);
-  color: brown;
+  color: #07393C;
   font-size: clamp(1.5rem, 4vw, 2rem);
   position: relative;
   padding-bottom: 10px;
@@ -372,7 +373,7 @@ body {
   left: 0;
   width: clamp(50px, 10vw, 80px);
   height: 4px;
-  background: brown;
+  background: #07393C;
   border-radius: 2px;
 }
 
@@ -389,7 +390,7 @@ body {
   top: 10px;
   left: 10px;
   font-size: clamp(3rem, 6vw, 4rem);
-  color: rgba(0, 0, 0, 0.1);
+  color: #2C666E;
   font-family: Georgia, serif;
 }
 
@@ -403,18 +404,18 @@ body {
   text-align: right;
   font-weight: bold;
   font-style: normal;
-  color: brown;
+  color: #07393C;
   font-size: clamp(0.9rem, 2.2vw, 1rem);
 }
 
 /* Footer styles */
 .footer {
-  background: rgb(255, 237, 237);
-  color: #000000;
+  background: #2C666E;
+  color: #F0EDEE;
   padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 3vw, 2rem);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: clamp(1rem, 3vw, 2rem);
+  gap: clamp(4.1rem, 3vw, 1rem);
   margin-left: 0;
   margin-right: 0;
   z-index: 999;
@@ -430,7 +431,7 @@ body {
 
 .footer-section h3 {
   margin-bottom: clamp(1rem, 3vw, 1.5rem);
-  color: #161616;
+  color: #F0EDEE;
   font-size: clamp(1.2rem, 3vw, 1.5rem);
   position: relative;
   padding-bottom: 10px;
@@ -443,7 +444,7 @@ body {
   left: 0;
   width: clamp(25px, 6vw, 40px);
   height: 3px;
-  background: brown;
+  background: #07393C;
   border-radius: 1.5px;
 }
 
@@ -478,13 +479,14 @@ body {
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  background-color: rgb(0, 0, 0);
+  background-color: #0A090C;
   transition: all 0.3s ease;
   font-size: clamp(0.8rem, 2vw, 0.9rem);
 }
 
 .social-links a:hover {
-  background-color: rgba(165, 42, 42, 0.913);
+  background-color: #F0EDEE;
+  color: #07393C;
   border: none;
   transform: translateY(-3px);
 }
@@ -496,17 +498,18 @@ body {
 }
 
 .links-social a {
-  color: #ffffff;
+  color: #F0EDEE;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  background-color: rgb(0, 0, 0);
+  background-color: #07393C;
   transition: all 0.3s ease;
   font-size: clamp(0.8rem, 2vw, 0.9rem);
 }
 
 .links-social a:hover {
-  background-color: rgba(165, 42, 42, 0.913);
+  background-color: #F0EDEE;
+  color: #07393C;
   border: none;
   transform: translateY(-3px);
 }
@@ -792,13 +795,13 @@ body {
 
 .about-page h1,
 .about-page h2 {
-  color: brown;
+  color: #07393C;
   text-align: center;
   margin-bottom: 25px;
 }
 
 .about-page h3 {
-  color: brown;
+  color: #2C666E;
   margin-bottom: 15px;
 }
 
@@ -852,7 +855,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
-  border: 3px solid #7a1f1f;
+  border: none;
 }
 
 .founder-image img {
@@ -921,13 +924,13 @@ body {
 .page-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: brown;
+  color: #07393C;
   margin-bottom: 10px;
 }
 
 .page-description {
   font-size: 1.2rem;
-  color: #555;
+  color: #0A090C;
   margin-bottom: 30px;
 }
 
@@ -962,11 +965,11 @@ body {
 
 .branch-card h2 {
   font-size: 1.5rem;
-  color: brown;
+  color: #2C666E;
   margin-bottom: 10px;
 }
 
 .branch-card p {
   font-size: 1rem;
-  color: #666;
+  color: #0A090C;
 }

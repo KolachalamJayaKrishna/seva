@@ -1,21 +1,20 @@
-// App.js
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import ritual from './photos/Rituals.png';
-import cottage from './photos/Cottages.png';
-import cattering from './photos/Cattering.png';
+import upana from './photos/Upana.png';
+import samvat from './photos/Samvat.png';
 import image_1 from './photos/Image_1.webp';
 import image_2 from './photos/Image_2.webp';
 import image_3 from './photos/Image_3.webp';
-import real_logo from './photos/Real_logo.png';
-import home from './photos/Home.png'
-import about from './photos/About.png'
-import services from './photos/Services.png'
-import cottages from './photos/ServiceCottage.png'
-import call from './photos/Call.png'
-import branches from './photos/Branches.png'
-import ganesh from './photos/Ganesh.png'
+import logo from './photos/Logo.png';
+import home from './photos/Icons/Home.png'
+import about from './photos/Icons/About.png'
+import services from './photos/Icons/Services.png'
+import regis from './photos/Icons/Registration.png'
+import call from './photos/Icons/Contact.png'
+import branches from './photos/Icons/Branches.png'
+import feedba from './photos/Icons/Feedback.png'
 import AboutPage from './About';
 import Branch from './Branch';
 import Services from './Services';
@@ -57,6 +56,7 @@ const App = () => {
   };
 
   return (
+    
     <Router>
       <div className="app-container">
         {/* Header */}
@@ -69,11 +69,11 @@ const App = () => {
               <span className="menu-icon">☰</span>
             </button>
             <div className="logo-container">
-              <img className="real_logo" src={real_logo} alt="Real_logo" />
+              <img className="real_logo" src={logo} alt="Logo" />
             </div>
-            <button className="action-button">
-              <span>☎</span>
-            </button>
+            <Link to="/contact" className="action-button">
+              ☎
+            </Link>
           </div>
         </header>
 
@@ -95,14 +95,14 @@ const App = () => {
                 <img src={branches} alt="Home icon" />
                 Branches</Link></li>
                 <li><Link to="/registeration" onClick={() => setSidebarOpen(false)}>
-                <img src={cottages} alt="Home icon" />
+                <img src={regis} alt="Home icon" />
                 Registration</Link></li>
                 <li><Link to="/contact" on onClick={()=> setSidebarOpen(false)}>
                 <img src={call} alt="Home icon" />
                 Contact Us
                 </Link></li>
                 <li className="feedback"><Link to="/feedback" on onClick={()=> setSidebarOpen(false)}>
-                <img src={about} alt="Home icon" />
+                <img src={feedba} alt="Home icon" />
                 Feedback
                 </Link></li>
               </ul>
@@ -141,7 +141,8 @@ const App = () => {
           <div className="footer-section">
             <h3>Contact Us</h3>
             <p>Smt. Vemavarapu Vijaya Lakshmi</p>
-            <p>Email: gssschedule18@gmail.com</p>
+            <p>Email:<br/></p>
+            <p style={{color:"yellow"}}>sirvijayagayathrisevasamastha<br/>@gmail.com</p>
             <p>Phone: <br/>+91 98490 50816<br/>
                       +91 92468 74049<br/>
                       +91 98490 27963</p>
@@ -170,8 +171,18 @@ const App = () => {
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
           </div>
-          <div className="Ganesh">
-            <img src={ganesh} alt="Ganesh" />
+          <div className="footer-section">
+          <h3>Ratings</h3>
+            <ul>
+              <li><h4>Google</h4></li>
+              <li>Tarnaka: ⭐⭐⭐⭐ <br/>
+              New Nagole: ⭐⭐⭐⭐ <br/>
+              Sanathnagar: ⭐⭐⭐⭐ <br/>
+              Kukatpally: ⭐⭐⭐⭐ <br/>
+              </li>
+              <li><h4>Justdial</h4></li>
+              <li>Overall Rating: ⭐⭐⭐⭐</li>
+            </ul>
           </div>
           <div className="copyright">
             <p>&copy; {new Date().getFullYear()} Sri Vijaya Gayathri Seva Samastha. All rights reserved.</p>
@@ -218,7 +229,9 @@ const HomePage = ({ highlightImages, currentImageIndex, setCurrentImageIndex }) 
       </section>
 
       <section className="features-section">
-        <h2>Our Services</h2>
+        <h2>Few Services</h2>
+        <p style={{textAlign:'center'}}>Discover a wider range of our services on the Services page.</p>
+        <br/>
         <div className="features-grid">
           <div className="feature-card">
             <div className="feature-icon"><img className="ritual" src={ritual} alt="Ritual" /></div>
@@ -227,14 +240,14 @@ const HomePage = ({ highlightImages, currentImageIndex, setCurrentImageIndex }) 
                by qualified Purohits in a sacred and hygienic atmosphere as per tradition.</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon"><img className="cottage" src={cottage} alt="Cottage" /></div>
+            <div className="feature-icon"><img className="upana" src={upana} alt="Upanaayam" /></div>
             <h3>Upanayanam</h3>
             <p>Upanayanam is a sacred Hindu ritual marking a boy's initiation into spiritual learning, symbolizing his entry 
               into the path of knowledge and righteousness. 
               It involves the wearing of the sacred thread (Yajnopavita) and the chanting of Vedic mantras.</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon"><img className="cattering" src={cattering} alt="Cottage" /></div>
+            <div className="feature-icon"><img className="samvat" src={samvat} alt="Samvatsarikaalu" /></div>
             <h3>Samvatsrikaalu</h3>
             <p>Samvatsarikaalu refers to the annual rituals performed in Hindu tradition to honor ancestors and deities, 
               ensuring blessings 
