@@ -66,7 +66,7 @@ const App = () => {
           </div>
           <div className="bottom-header">
             <button className="menu-toggle" onClick={toggleSidebar}>
-              <span className="menu-icon">☰</span>
+            <span className="menu-icon">{sidebarOpen ? '✖' : '☰'}</span>
             </button>
             <div className="logo-container">
               <img className="real_logo" src={logo} alt="Logo" />
@@ -82,29 +82,20 @@ const App = () => {
           <div className={`sidebar ${sidebarOpen ? 'open' : 'closed'}`}>
             <nav>
               <ul>
-                <li><Link to="/" onClick={() => setSidebarOpen(false)}>
-                <img src={home} alt="Home icon" />
-                Home</Link></li>
-                <li><Link to="/about" onClick={() => setSidebarOpen(false)}>
-                <img src={about} alt="Home icon" />
-                About</Link></li>
-                <li><Link to="/services" onClick={() => setSidebarOpen(false)}>
-                <img src={services} alt="Home icon" />
-                Services</Link></li>
-                <li><Link to="/branches" onClick={() => setSidebarOpen(false)}>
-                <img src={branches} alt="Home icon" />
-                Branches</Link></li>
-                <li><Link to="/registeration" onClick={() => setSidebarOpen(false)}>
-                <img src={regis} alt="Home icon" />
-                Registration</Link></li>
-                <li><Link to="/contact" on onClick={()=> setSidebarOpen(false)}>
-                <img src={call} alt="Home icon" />
-                Contact Us
-                </Link></li>
-                <li className="feedback"><Link to="/feedback" on onClick={()=> setSidebarOpen(false)}>
-                <img src={feedba} alt="Home icon" />
-                Feedback
-                </Link></li>
+              <li><Link to="/" onClick={() => { setSidebarOpen(false); window.scrollTo(0, 0); }}>
+                <img src={home} alt="Home icon" /> Home</Link></li>
+              <li><Link to="/about" onClick={() => { setSidebarOpen(false); window.scrollTo(0, 0); }}>
+                <img src={about} alt="About icon" /> About</Link></li>
+              <li><Link to="/services" onClick={() => { setSidebarOpen(false); window.scrollTo(0, 0); }}>
+                <img src={services} alt="Services icon" /> Services</Link></li>
+              <li><Link to="/branches" onClick={() => { setSidebarOpen(false); window.scrollTo(0, 0); }}>
+                <img src={branches} alt="Branches icon" /> Branches</Link></li>
+              <li><Link to="/registeration" onClick={() => { setSidebarOpen(false); window.scrollTo(0, 0); }}>
+                <img src={regis} alt="Registration icon" /> Registration</Link></li>
+              <li><Link to="/contact" onClick={() => { setSidebarOpen(false); window.scrollTo(0, 0); }}>
+                <img src={call} alt="Contact icon" /> Contact Us</Link></li>
+              <li className="feedback"><Link to="/feedback" onClick={() => { setSidebarOpen(false); window.scrollTo(0, 0); }}>
+                <img src={feedba} alt="Feedback icon" /> Feedback</Link></li>
               </ul>
             </nav>
           </div>

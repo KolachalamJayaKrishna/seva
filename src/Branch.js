@@ -53,7 +53,7 @@ const Branches = () => {
         </div>
         <div className="branch-card">
           <h2>Vijayawada</h2>
-          <p>Near SBI, No: 130, Addankivari Street, Current Nagar, Ramavarappadu, Vijayawada, Andhra Pradesh, Daily<br/> 7842250270</p>
+          <p>Near SBI, No: 130, Addanki vari Street, Current Nagar, Ramavarappadu, Vijayawada, Andhra Pradesh, Daily<br/> 7842250270</p>
           <br/><br/>
           <div className="links-social"style={{justifyContent:"center"}}>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Location</a> </div>

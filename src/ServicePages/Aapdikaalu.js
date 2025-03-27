@@ -15,7 +15,7 @@ const AboutPage = () => {
           top: "0px", 
           left: "10px", 
           fontSize: "16px", 
-          backgroundColor: "white", 
+          backgroundColor: "Forestgreen", 
           border: "none", 
           borderRadius: "5px", 
           cursor: "pointer"
