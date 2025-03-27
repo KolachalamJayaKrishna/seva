@@ -8,7 +8,7 @@ const aboutpage = () => {
         <div className="about-hero-content">
           <div className="about-hero-text">
             <p>
-              Founded in 2005, Sri Vijaya Gayathri Seva Samastha has been dedicated to preserving 
+              Sree Vijaya Gayathri Seva Samastha has been dedicated to preserving 
               and promoting Hindu Vedic traditions through authentic ritual services and community support.
             </p>
             <p>
@@ -24,7 +24,7 @@ const aboutpage = () => {
         <h2>Our Mission</h2>
         <div className="mission-content">
           <p>
-            At Sri Vijaya Gayathri Seva Samastha, our mission is to uphold the purity of Vedic traditions 
+            At Sree Vijaya Gayathri Seva Samastha, our mission is to uphold the purity of Vedic traditions 
             while serving the community through:
           </p>
           <ul className="mission-list">
@@ -47,13 +47,13 @@ const aboutpage = () => {
             <h3>Smt.V Vijaya Lakshmi</h3>
             <h3>W/O Sri. V S V Swamy Gaaru(Late) and D/O Sri. M S Rama Rao Gaaru(Late)</h3>
             <p>
-            They have established Sri Vijaya Gayathri Seva Samastha with a 
+              Established Sree Vijaya Gayathri Seva Samastha with a 
               profound dedication to preserving Hindu traditions. With over 20 years of experience 
               in conducting and organizing Vedic ceremonies, they have guided countless families 
               through important religious milestones.
             </p>
             <p>
-              Their vision of creating a space where spiritual traditions can thrive in the modern 
+              Having vision of creating a space where spiritual traditions can thrive in the modern 
               world has led to the establishment of multiple branches across Telangana and Andhra Pradesh, 
               serving thousands of devotees annually.
             </p>
@@ -88,14 +88,14 @@ const aboutpage = () => {
         <div className="growth-content">
           <div className="growth-text">
             <p>
-              Starting with a single location in Hyderabad, Sri Vijaya Gayathri Seva Samastha has expanded to multiple branches across Telangana and Andhra Pradesh, including:
+              Starting with a single location in Hyderabad, Sree Vijaya Gayathri Seva Samastha has expanded to multiple branches across Telangana and Andhra Pradesh, including:
             </p>
             <ul>
-              <li>LB Nagar, Hyderabad</li>
               <li>Tarnaka, Hyderabad</li>
-              <li>Sanathnagar, Hyderabad</li>
+              <li>New Nagole, Hyderabad</li>
               <li>Dammaiguda, Hyderabad</li>
               <li>Kukatpally, Hyderabad</li>
+              <li>Sanathnagar, Hyderabad</li>
               <li>Vijayawada, Andhra Pradesh</li>
             </ul>
             <p>
