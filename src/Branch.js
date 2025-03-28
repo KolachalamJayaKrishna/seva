@@ -56,7 +56,7 @@ const Branches = () => {
           <p>Near SBI, No: 130, Addanki vari Street, Current Nagar, Ramavarappadu, Vijayawada, Andhra Pradesh, Daily<br/> 7842250270</p>
           <br/><br/>
           <div className="links-social"style={{justifyContent:"center"}}>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Location</a> </div>
+              <a href="https://www.google.com/maps/place/16%C2%B031'17.6%22N+80%C2%B040'44.8%22E/@16.5215499,80.6765465,778m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d16.5215499!4d80.6791214?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Location</a> </div>
         </div>
       </div>
     </div>
