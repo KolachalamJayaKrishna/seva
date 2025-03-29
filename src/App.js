@@ -62,7 +62,7 @@ const App = () => {
         {/* Header */}
         <header className="main-header">
           <div className="top-header">
-            <h1 className="org-title">Sree Vijaya Gayathri Seva Samastha</h1>
+            <h1 className="org-title">Sree Vijaya Gayathri Seva Samstha</h1>
           </div>
           <div className="bottom-header">
             <button className="menu-toggle" onClick={toggleSidebar}>
@@ -133,7 +133,7 @@ const App = () => {
             <h3>Contact Us</h3>
             <p>Smt. Vemavarapu Vijaya Lakshmi</p>
             <p>Email:<br/></p>
-            <p style={{color:"yellow"}}>sirvijayagayathrisevasamastha<br/>@gmail.com</p>
+            <p style={{color:"yellow"}}>sirvijayagayathrisevasamstha<br/>@gmail.com</p>
             <p>Phone: <br/>+91 98490 50816<br/>
                       +91 92468 74049<br/>
                       +91 98490 27963</p>
@@ -177,7 +177,7 @@ const App = () => {
             </ul>
           </div>
           <div className="copyright">
-            <p>&copy; {new Date().getFullYear()} Sree Vijaya Gayathri Seva Samastha. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Sree Vijaya Gayathri Seva Samstha. All rights reserved.</p>
           </div>
         </footer>
       </div>
@@ -211,9 +211,9 @@ const HomePage = ({ highlightImages, currentImageIndex, setCurrentImageIndex }) 
 
       {/* Website Details Sections */}
       <section className="details-section">
-        <h2>Welcome to Sree Vijaya Gayathri Seva Samastha</h2>
+        <h2>Welcome to Sree Vijaya Gayathri Seva Samstha</h2>
         <p>
-        Sree Vijaya Gayathri Seva Samastha provides matrimonial assistance and religious services, 
+        Sree Vijaya Gayathri Seva Samstha provides matrimonial assistance and religious services, 
         including Purohit support for ceremonies like Gruhapravesham, Pitru Karyalu, 
         and Abdeekas. With experienced priests and multiple branches, it ensures 
         sacred rituals are performed traditionally in a hygienic environment.
@@ -249,15 +249,15 @@ const HomePage = ({ highlightImages, currentImageIndex, setCurrentImageIndex }) 
       </section>
 
       <section className="testimonials-section">
-        <h2>Why our Samastha ?</h2>
+        <h2>Why our Samstha ?</h2>
         <div className="testimonial">
-          <p>Sree Vijaya Gayathri Seva Samastha stands out because of its commitment to authentic 
+          <p>Sree Vijaya Gayathri Seva Samstha stands out because of its commitment to authentic 
             Hindu traditions, experienced purohits, and a holistic range of services
             that cater to both matrimonial and religious needs. Unlike others, it 
             ensures a sacred and hygienic environment for rituals, 
             personalized matchmaking services, and reliable catering for dharmic 
             gatherings—all under one trusted platform.</p>
-          <p className="testimonial-author">- Sree Vijaya Gayatri Seva Samastha</p>
+          <p className="testimonial-author">- Sree Vijaya Gayatri Seva Samstha</p>
         </div>
       </section>
     </div>

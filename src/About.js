@@ -8,7 +8,7 @@ const aboutpage = () => {
         <div className="about-hero-content">
           <div className="about-hero-text">
             <p>
-              Sree Vijaya Gayathri Seva Samastha has been dedicated to preserving 
+              Sree Vijaya Gayathri Seva Samstha has been dedicated to preserving 
               and promoting Hindu Vedic traditions through authentic ritual services and community support.
             </p>
             <p>
@@ -24,7 +24,7 @@ const aboutpage = () => {
         <h2>Our Mission</h2>
         <div className="mission-content">
           <p>
-            At Sree Vijaya Gayathri Seva Samastha, our mission is to uphold the purity of Vedic traditions 
+            At Sree Vijaya Gayathri Seva Samstha, our mission is to uphold the purity of Vedic traditions 
             while serving the community through:
           </p>
           <ul className="mission-list">
@@ -47,7 +47,7 @@ const aboutpage = () => {
             <h3>Smt.V Vijaya Lakshmi</h3>
             <h3>W/O Sri. V S V Swamy Gaaru(Late) and D/O Sri. M S Rama Rao Gaaru(Late)</h3>
             <p>
-              Established Sree Vijaya Gayathri Seva Samastha with a 
+              Established Sree Vijaya Gayathri Seva Samstha with a 
               profound dedication to preserving Hindu traditions. With over 20 years of experience 
               in conducting and organizing Vedic ceremonies, they have guided countless families 
               through important religious milestones.
@@ -88,7 +88,7 @@ const aboutpage = () => {
         <div className="growth-content">
           <div className="growth-text">
             <p>
-              Starting with a single location in Hyderabad, Sree Vijaya Gayathri Seva Samastha has expanded to multiple branches across Telangana and Andhra Pradesh, including:
+              Starting with a single location in Hyderabad, Sree Vijaya Gayathri Seva Samstha has expanded to multiple branches across Telangana and Andhra Pradesh, including:
             </p>
             <ul>
               <li>Tarnaka, Hyderabad</li>
