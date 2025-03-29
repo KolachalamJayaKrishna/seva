@@ -304,7 +304,7 @@ body {
 .feature-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-  background-color: #2c666e21;
+  background-color: #d49e172c;
 }
 
 .feature-icon {

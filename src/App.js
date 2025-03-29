@@ -12,7 +12,6 @@ import home from './photos/Icons/Home.png'
 import about from './photos/Icons/About.png'
 import services from './photos/Icons/Services.png'
 import regis from './photos/Icons/Registration.png'
-import call from './photos/Icons/Contact.png'
 import branches from './photos/Icons/Branches.png'
 import feedba from './photos/Icons/Feedback.png'
 import AboutPage from './About';
@@ -29,7 +28,6 @@ import Vivaaham from './ServicePages/Vivaaham';
 import Vratham from './ServicePages/Vrathaalu';
 import Registrations from './RegisterationPage';
 import Feedbacks from './Feedback';
-import ContactDetails from './Contact';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -71,7 +69,7 @@ const App = () => {
             <div className="logo-container">
               <img className="real_logo" src={logo} alt="Logo" />
             </div>
-            <Link to="/contact" className="action-button">
+            <Link to="/feedback" className="action-button">
               ☎
             </Link>
           </div>
@@ -92,8 +90,6 @@ const App = () => {
                 <img src={branches} alt="Branches icon" /> Branches</Link></li>
               <li><Link to="/registeration" onClick={() => { setSidebarOpen(false); window.scrollTo(0, 0); }}>
                 <img src={regis} alt="Registration icon" /> Registration</Link></li>
-              <li><Link to="/contact" onClick={() => { setSidebarOpen(false); window.scrollTo(0, 0); }}>
-                <img src={call} alt="Contact icon" /> Contact Us</Link></li>
               <li className="feedback"><Link to="/feedback" onClick={() => { setSidebarOpen(false); window.scrollTo(0, 0); }}>
                 <img src={feedba} alt="Feedback icon" /> Feedback</Link></li>
               </ul>
@@ -112,7 +108,6 @@ const App = () => {
               <Route path="/services" element={<Services />} />
               <Route path="/registeration" element={<Registrations/>} />
               <Route path="/branches" element={<Branch />} />
-              <Route path="/contact" element={<ContactDetails/>} />
               <Route path="/feedback" element={<Feedbacks />}/>
               <Route path="/hindusam" element={<HinduSam />} />
               <Route path="/aapdikaalu" element={<Aapdikam />} />
