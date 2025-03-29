@@ -1,5 +1,5 @@
 import React from 'react';
-import founderImg from './photos/Ganesh.png';
+import founderImg from './photos/Founder.png';
 
 const aboutpage = () => {
   return (
@@ -9,7 +9,7 @@ const aboutpage = () => {
           <div className="about-hero-text">
             <p>
               Sree Vijaya Gayathri Seva Samstha has been dedicated to preserving 
-              and promoting Hindu Vedic traditions through authentic ritual services and community support.
+              and promoting Hindu Vedic traditions through authentic ritual services and Brahmin community support.
             </p>
             <p>
               Our organization was established with the vision of ensuring the sanctity and 
@@ -25,13 +25,13 @@ const aboutpage = () => {
         <div className="mission-content">
           <p>
             At Sree Vijaya Gayathri Seva Samstha, our mission is to uphold the purity of Vedic traditions 
-            while serving the community through:
+            while serving the Brahmin community through:
           </p>
           <ul className="mission-list">
             <li>Providing authentic Hindu ritual services performed by qualified purohits</li>
             <li>Offering matrimonial assistance to families seeking traditional arrangements</li>
             <li>Supporting families during important life ceremonies and transitions</li>
-            <li>Creating a sacred space for spiritual growth and community connection</li>
+            <li>Creating a sacred space for spiritual growth and Brahmin community connection</li>
             <li>Educating the younger generation about our rich cultural heritage</li>
           </ul>
         </div>
@@ -73,8 +73,8 @@ const aboutpage = () => {
             <p>Every service we offer is conducted with utmost devotion and respect, honoring the divine presence in all religious practices.</p>
           </div>
           <div className="value-card">
-            <h3>Community</h3>
-            <p>We believe in strengthening community bonds through shared spiritual experiences and supporting families during important life events.</p>
+            <h3>Brahmin Community</h3>
+            <p>We believe in strengthening Brahmin community bonds through shared spiritual experiences and supporting families during important life events.</p>
           </div>
           <div className="value-card">
             <h3>Knowledge</h3>

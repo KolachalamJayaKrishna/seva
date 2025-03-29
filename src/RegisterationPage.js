@@ -20,7 +20,7 @@ const Registrations = () => {
           </p>
         </div>
         <div className="links-social"style={{justifyContent:"center"}}>
-              <a href="https://forms.gle/PBRnapGQj3wwSRGT6" target="_blank" rel="noopener noreferrer">Book Here</a>
+              <a href="https://forms.gle/iE4k6BSMR8br8mgy9" target="_blank" rel="noopener noreferrer">Book Here</a>
         </div>
       </div>
     </section>

@@ -4,9 +4,9 @@ import './App.css';
 import ritual from './photos/Rituals.png';
 import upana from './photos/Upana.png';
 import samvat from './photos/Samvat.png';
-import image_1 from './photos/Image_1.webp';
-import image_2 from './photos/Image_2.webp';
-import image_3 from './photos/Image_3.webp';
+import image_1 from './photos/Image_1.png';
+import image_2 from './photos/Image_2.png';
+import image_3 from './photos/Image_3.png';
 import logo from './photos/Logo.png';
 import home from './photos/Icons/Home.png'
 import about from './photos/Icons/About.png'
@@ -215,7 +215,7 @@ const HomePage = ({ highlightImages, currentImageIndex, setCurrentImageIndex }) 
         <p>
         Sree Vijaya Gayathri Seva Samstha provides matrimonial assistance and religious services, 
         including Purohit support for ceremonies like Gruhapravesham, Pitru Karyalu, 
-        and Abdeekas. With experienced priests and multiple branches, it ensures 
+        and Abdeekas, Maasikaalu, Samvatsarikaalu, Vrathaalu, Japaalu, Agnihothra Homam. With experienced priests and multiple branches, it ensures 
         sacred rituals are performed traditionally in a hygienic environment.
         </p>
       </section>
