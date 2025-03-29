@@ -131,9 +131,9 @@ const App = () => {
         <footer className="footer">
           <div className="footer-section">
             <h3>Contact Us</h3>
-            <p>Smt. Vemavarapu Vijaya Lakshmi</p>
+            <p style={{color:"#4A4A4A", fontWeight:"bold"}}>Smt. Vemavarapu Vijaya Lakshmi</p>
             <p>Email:<br/></p>
-            <p style={{color:"yellow"}}>sirvijayagayathrisevasamstha<br/>@gmail.com</p>
+            <p style={{color:"#4A4A4A", fontWeight:"bold"}}>sirvijayagayathrisevasamstha<br/>@gmail.com</p>
             <p>Phone: <br/>+91 98490 50816<br/>
                       +91 92468 74049<br/>
                       +91 98490 27963</p>
