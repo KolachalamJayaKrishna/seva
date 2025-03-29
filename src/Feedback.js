@@ -12,7 +12,7 @@ const Feedback = () => {
           <br/> <br/>We value your thoughts and experiences! Your feedback helps us enhance our Seva Samastha services, including Hindu Vaidika Saampradaayam, Aapdikaalu, Agnihothraalu, Samvatsaraadhi Pithru Kaaryaalu, Upanayanaalu, Japaalu, Vrathaalu, Maasikaalu, Samvatsarikaalu, etc. Please share your suggestions, experiences, and any improvements you'd like to see. Every response is important in making our seva more meaningful and effective.   </p>
         </div>
         <div className="links-social"style={{justifyContent:"center"}}>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Feedback Here</a>
+              <a href="https://forms.gle/A7RYEbMzNC29dUmq6" target="_blank" rel="noopener noreferrer">Feedback Here</a>
         </div>
       </div>
     </section>

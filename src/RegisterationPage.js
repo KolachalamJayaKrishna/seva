@@ -20,7 +20,7 @@ const Registrations = () => {
           </p>
         </div>
         <div className="links-social"style={{justifyContent:"center"}}>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Apply Here</a>
+              <a href="https://forms.gle/PBRnapGQj3wwSRGT6" target="_blank" rel="noopener noreferrer">Apply Here</a>
         </div>
       </div>
     </section>
