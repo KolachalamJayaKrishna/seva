@@ -153,9 +153,8 @@ const App = () => {
           <div className="footer-section">
             <h3>Follow Us</h3>
             <div className="social-links">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href="https://www.instagram.com/srivijayagayathrisevasamastha/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.facebook.com/profile.php?id=61574918965085&sk=map" target="_blank" rel="noopener noreferrer">Facebook</a>
             </div>
           </div>
           <div className="footer-section">
